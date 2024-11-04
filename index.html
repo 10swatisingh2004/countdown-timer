@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <i><h1>Countdown Timer</h1></i>
+   <form action="" style="display: flex; flex-direction: column;">
+    <div class="1">
+        <label for="date">ENTER DATE</label>
+        <input type="date" id="date">
+    </div>
+   <div class="2">
+    <label for="time">ENTER TIME</label>
+    <input type="time" id="times">
+   </div>
+    
+   </form>
+    <button id="calculate">Start</button>
+   
+
+    <!-- Countdown Popup Modal -->
+    <div id="countdownModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="Countdown">
+                <div>
+                    <p>DAY</p>
+                    <div class="time" id="countdown-day">0</div>
+                </div>
+                <div>
+                    <p>HOURS</p>
+                    <div class="time" id="countdown-hours">0</div>
+                </div>
+                <div>
+                    <p>MINUTES</p>
+                    <div class="time" id="countdown-min">0</div>
+                </div>
+                <div>
+                    <p>SECONDS</p>
+                    <div class="time" id="countdown-sec">0</div>
+                </div>
+            </div>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+</body>
+</html>
